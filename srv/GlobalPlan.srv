@@ -1,10 +1,10 @@
 # Get a plan from the current position to the goal Pose 
 
 # gloabl path search algorithm select
-std_msgs/String algorithm
+#std_msgs/String algorithm
 
 #The global costmap for the plan
-nav_msgs/OccupancyGrid gcostmap
+nav_msgs/OccupancyGrid costmap
 
 # The start pose for the plan
 geometry_msgs/PoseStamped start
@@ -14,6 +14,6 @@ geometry_msgs/PoseStamped goal
 
 # If the goal is obstructed, how many meters the planner can 
 # relax the constraint in x and y before failing. 
-float32 tolerance
+#float32 tolerance
 ---
-nav_msgs/Path plan
+nav_msgs/Path path
